@@ -109,7 +109,10 @@ public:
         RouteEntry test3 = {{"PUT"}, "./templates/test.html", true};
         routeLookUp["/test/put"] = test3;   
         RouteEntry test4 = {{"GET", "POST"}, "./templates/test.html", true};
-        routeLookUp["/test/post-get"] = test4;     
+        routeLookUp["/test/post-get"] = test4;   
+
+        RouteEntry style = {{"GET"}, "./static/css/style.css", true};
+        routeLookUp["/static/style.css"] = style; 
 
         RouteEntry favicon = {{"GET"}, "./static/img/favicon.jpg", true};
         routeLookUp["/favicon.ico"] = favicon;
